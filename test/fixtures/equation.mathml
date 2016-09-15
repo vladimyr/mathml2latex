@@ -1,0 +1,53 @@
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML" alttext="" altimg="../images/eqn03.jpg">
+  <mrow>
+    <mi>P</mi>
+    <mi>V</mi>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mi>F</mi>
+        <mi>V</mi>
+      </mrow>
+      <mrow>
+        <msup>
+          <mrow>
+            <mo stretchy="false">(</mo>
+            <mn>1</mn>
+            <mo>+</mo>
+            <mi>r</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+          <mi>T</mi>
+        </msup>
+      </mrow>
+    </mfrac>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mi>$</mi>
+        <mn>1</mn>
+        <mo>,</mo>
+        <mn>000</mn>
+      </mrow>
+      <mrow>
+        <msup>
+          <mrow>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mn>1.05</mn>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow>
+          <mrow>
+            <mn>30</mn>
+          </mrow>
+        </msup>
+      </mrow>
+    </mfrac>
+    <mo>=</mo>
+    <mi>$</mi>
+    <mn>231.38</mn>
+  </mrow>
+</math>
