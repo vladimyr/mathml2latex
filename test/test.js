@@ -17,6 +17,10 @@ function createTest(options) {
   };
 }
 
+// example sources: https://developer.mozilla.org/en-US/docs/Mozilla/MathML_Project/MathML_Torture_Test
+// reference converter: http://johnmacfarlane.net/texmath.html
+// verify output: https://khan.github.io/KaTeX/
+
 test('converting equation', createTest({
   input: './fixtures/equation.mathml',
   expected: 'PV = \\frac{FV}{\\left(1 + r\\right)^{T}} = \\frac{\\$1,000}{\\left(1.05\\right)^{30}} = \\$231.38'
@@ -32,7 +36,22 @@ test('converting sums', createTest({
   expected: '\\sum\\limits_{i = 1}^{p}\\sum\\limits_{j = 1}^{q}\\sum\\limits_{k = 1}^{r}a_{ij}b_{jk}c_{ki}'
 }));
 
-test('converting tables', createTest({
+test('converting complex sum', createTest({
+  input: './fixtures/complex-sum.mathml',
+  expected: '\\sum\\limits_{\\frac{0 \\leq i \\leq m}{0 < j < n}}P\\left(i,j\\right)'
+}));
+
+/*test('converting tables', createTest({
   input: './fixtures/tables.mathml',
   expected: '\\sum\\limits_{i = 1}^{p}\\sum\\limits_{j = 1}^{q}\\sum\\limits_{k = 1}^{r}a_{ij}b_{jk}c_{ki}'
+}));*/
+
+test('converting roots', createTest({
+  input: './fixtures/roots.mathml',
+  expected: '\\sqrt{1 + \\sqrt{1 + \\sqrt{1 + \\sqrt{1 + \\sqrt{1 + \\sqrt{1 + \\sqrt{1 + x}}}}}}}'
+}));
+
+test('converting function family', createTest({
+  input: './fixtures/function-family.mathml',
+  expected: '\\sqrt{1 + \\sqrt{1 + \\sqrt{1 + \\sqrt{1 + \\sqrt{1 + \\sqrt{1 + \\sqrt{1 + x}}}}}}}'
 }));
